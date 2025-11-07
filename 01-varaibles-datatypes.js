@@ -104,3 +104,29 @@ while(j <= 10){
     console.log(j)
     j++;
 }
+
+//array in js
+
+//calculate the average of the marks array
+
+let stdnts_marks = [70, 89, 80];
+
+let total = 0;
+
+for (const mark of stdnts_marks) {
+    total += mark
+}
+
+console.log('avarage :',total / stdnts_marks.length);
+
+//question 2
+
+let items =[400, 780, 390, 120, 500];
+
+for (let i = 0; i < items.length; i++) {
+    console.log('the value before offer : ', items[i]);
+  let offer = items[i] / 10;
+  items[i] -= offer;
+  console.log('the value after offer',items[i]);
+}
+
