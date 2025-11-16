@@ -1,0 +1,100 @@
+/* ----------- Global Styling ----------- */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ----------- Quiz Container ----------- */
+#quiz-box {
+  background: white;
+  width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ----------- Question Text ----------- */
+#question {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ----------- Answer Buttons ----------- */
+#answers button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: none;
+  background: #ececec;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#answers button:hover {
+  background: #dcdcdc;
+}
+
+#answers button:active {
+  transform: scale(0.98);
+}
+
+/* Selected answer (JS will set background manually) */
+.selected {
+  background: #90caf9 !important;
+}
+
+/* ----------- Next Button ----------- */
+#nextBtn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #3a1c71;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#nextBtn:hover {
+  background: #5a33a2;
+}
+
+#nextBtn:active {
+  transform: scale(0.97);
+}
+
+/* ----------- Result Text ----------- */
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a1c71;
+}
+
+#timer{
+    font-size: 20px;
+}
