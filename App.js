@@ -39,7 +39,7 @@ let timerDisplay = document.getElementById('timer');
 
 
 let index = 0;
-let score = 0;
+let score = 0
 let selectedAnswer = ''
 let timer;
 let countDown;
